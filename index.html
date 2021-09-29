@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts/stylesheet.css">
+    <title>Доктор Слухов</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#!"><img src="./img/logo.svg" alt="Доктор Слухов"></a>
+        </div>
+        <div class="basket" tabindex="0">
+            <div class="basket__icon">
+                <img src="./img/basket.svg" alt="Корзина">
+                <span class="basket__quantity">0</span>
+            </div>
+            <div class="basket-content basket-content-active">
+                <div class="basket-content__header">
+                    <div class="basket-content__header-wrapper">
+                        <h2 class="basket-content__header-title">Ваша корзина</h2>
+                        <a href="#!" class="basket-content__header-clear">очистить</a>
+                    </div>
+                    <button class="basket-content__header-cancle">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5834 6.94416L19.0559 5.41666L13.0001 11.4725L6.94425 5.41666L5.41675 6.94416L11.4726 13L5.41675 19.0558L6.94425 20.5833L13.0001 14.5275L19.0559 20.5833L20.5834 19.0558L14.5276 13L20.5834 6.94416Z"
+                                fill="#2B2A29" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="basket-content__list">
+                    <!-- <li class="basket-content__item">
+                        <article class="basket-content__card basket-product">
+                            <div class="basket-product__info">
+                                <h3 class="basket-product__title">Lorem ipsum dolor sit amet</h3>
+                                <div class="basket-product__count">
+                                    <button class="basket-product__count-up">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.59 15.41L12 10.83L7.41 15.41L6 14L12 8L18 14L16.59 15.41Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <span class="basket-product__count-now">1 шт</span>
+                                    <button class="basket-product__count-down">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z"
+                                                fill="black" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <label for="" class="basket-product__price-delete">
+                                    <div class="basket-product__price">10 500 ₽</div>
+                                    <button class="basket-product__delete none">Удалить</button>
+                                </label>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="basket-content__item">
+                        <article class="basket-content__card basket-product">
+                            <div class="basket-product__info">
+                                <h3 class="basket-product__title">Lorem ipsum dolor sit amet</h3>
+                                <div class="basket-product__count">
+                                    <button class="basket-product__count-up">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.59 15.41L12 10.83L7.41 15.41L6 14L12 8L18 14L16.59 15.41Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <span class="basket-product__count-now">1 шт</span>
+                                    <button class="basket-product__count-down">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z"
+                                                fill="black" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <label for="" class="basket-product__price-delete">
+                                    <div class="basket-product__price">10 500 ₽</div>
+                                    <button class="basket-product__delete none">Удалить</button>
+                                </label>
+                            </div>
+                        </article>
+                    </li> -->
+                </ul>
+
+                <div class="basket-content__footer">
+                    <div class="basket-content__footer-text">
+                        <span class="basket-content__footer-count">3 товаров</span>
+                        <span class="basket-content__footer-fullprice">129 500 ₽</span>
+                    </div>
+                    <button class="button basket-content__footer-button">
+                        Оформить заказ
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="title">Слуховые аппараты</h1>
+        <section class="content">
+            <div class="content__wrapper wrapper">
+                <!-- <article class="card">
+                    <div class="card__img">
+                        <img src="./img/product.png" alt="Product">
+                    </div>
+                    <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nullam cras
+                        in
+                        fringilla
+                        adipiscing eros</h2>
+                    <span class="card__availability">Нет в наличии</span>
+                    <div class="card__price">
+                        <span class="card__price-new">2 340 000 ₽</span>
+                        <span class="card__price-old">1 134 500 ₽</span>
+                    </div>
+                    <button class="card__button button">Купить</button>
+                </article> -->
+            </div>
+        </section>
+
+        <button class="content__loadmore">Показать ещё</button>
+    </div>
+    <script src="./js/basket/basket.js"></script>
+    <script src="./js/basket/basketOpen.js"></script>
+    <script src="./js/basket/productButtons.js"></script>
+    <script src="./js/content/content.js"></script>
+</body>
+
+</html>

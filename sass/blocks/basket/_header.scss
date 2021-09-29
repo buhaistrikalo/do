@@ -1,0 +1,38 @@
+.basket-content__header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    margin-bottom: 60px;
+}
+.basket-content__header-wrapper {
+    display: flex;
+    align-items: center;
+}
+.basket-content__header-title {
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 30px;
+}
+.basket-content__header-clear {
+    font-size: 12px;
+    line-height: 120%;
+    transition: text-decoration 0.2s ease-in;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.basket-content__header-cancle {
+    width: 26px;
+    height: 26px;
+    background-image: url("/img/close.svg");
+    background-color: #fff;
+
+    &:hover {
+        path{
+            fill: $accent;
+        }
+    }
+}

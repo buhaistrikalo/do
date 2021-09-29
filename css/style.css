@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
+input,
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input[type="submit"] {
+  background-color: none;
+  cursor: pointer;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: #2B2A29;
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.container {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+
+.none {
+  display: none;
+}
+
+.flex-space {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #00A0E3;
+  font-weight: bold;
+  color: #FEFEFE;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+  background-color: #006d9c;
+}
+
+.header {
+  background-color: #00A0E3;
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 65px;
+  padding-right: 65px;
+  margin-bottom: 80px;
+}
+
+.content {
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+.content__loadmore {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FEFEFE;
+  border: 1px solid #00A0E3;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #00A0E3;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.content__loadmore:hover {
+  background-color: #00A0E3;
+  color: #FEFEFE;
+}
+
+.card {
+  max-width: 410px;
+}
+
+.card__img {
+  height: 410px;
+  width: 410px;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.card__availability {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.card__price {
+  display: flex;
+  margin-bottom: 21px;
+  line-height: 100%;
+}
+
+.card__price-new {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00A0E3;
+}
+
+.card__price-old {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.basket {
+  position: relative;
+}
+
+.basket__icon {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+
+.basket__icon:hover {
+  cursor: pointer;
+}
+
+.basket__icon:hover .basket__quantity {
+  transform: translateY(-70%);
+}
+
+.basket__quantity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -8px;
+  top: 4px;
+  transform: translateY(-50%);
+  padding: 2px;
+  min-height: 24px;
+  min-width: 24px;
+  background-color: #EB5757;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.basket-content {
+  position: absolute;
+  right: -10px;
+  width: 475px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 30px 20px 30px 20px;
+  top: -4000px;
+  transition: top 0.5s ease-in;
+}
+
+.basket-content-active {
+  top: -60%;
+}
+
+.basket-content__list {
+  width: 435px;
+  margin-bottom: 60px;
+}
+
+.basket-content__footer {
+  display: flex;
+  align-items: center;
+}
+
+.basket-content__footer-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 39px;
+  min-width: 82px;
+}
+
+.basket-content__footer-count {
+  font-size: 12px;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.basket-content__footer-fullprice {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.basket-content__footer-button {
+  width: inherit;
+  flex-grow: 1;
+}
+
+.basket-content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.basket-content__header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.basket-content__header-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 30px;
+}
+
+.basket-content__header-clear {
+  font-size: 12px;
+  line-height: 120%;
+  transition: text-decoration 0.2s ease-in;
+}
+
+.basket-content__header-clear:hover {
+  text-decoration: underline;
+}
+
+.basket-content__header-cancle {
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/close.svg");
+  background-color: #fff;
+}
+
+.basket-content__header-cancle:hover path {
+  fill: #00A0E3;
+}
+
+.basket-content__item {
+  margin-bottom: 20px;
+}
+
+.basket-content__item:not(:nth-child(1)) {
+  padding-top: 20px;
+  border-top: 1px solid #2b2a2910;
+}
+
+.basket-product__info {
+  display: flex;
+  align-items: center;
+}
+
+.basket-product__title {
+  font-weight: 500;
+  min-width: 230px;
+  margin-right: 20px;
+}
+
+.basket-product__count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket-product__count-up {
+  width: 24px;
+  height: 24px;
+  background-color: #FEFEFE;
+}
+
+.basket-product__count-up:hover path {
+  fill: #00A0E3;
+}
+
+.basket-product__count-now {
+  font-size: 18px;
+}
+
+.basket-product__count-down {
+  width: 24px;
+  height: 24px;
+  background-color: #FEFEFE;
+}
+
+.basket-product__count-down:hover path {
+  fill: #00A0E3;
+}
+
+.basket-product__price-delete {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+  width: 70%;
+}
+
+.basket-product__price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.basket-product__delete {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  color: #EB5757;
+  background-color: #FEFEFE;
+}
+/*# sourceMappingURL=style.css.map */

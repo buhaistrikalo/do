@@ -1,0 +1,26 @@
+.basket-content__footer {
+    display: flex;
+    align-items: center;
+    
+}
+.basket-content__footer-text {
+    display:flex;
+    flex-direction: column;
+    margin-right: 39px;
+    min-width: 82px;
+}
+.basket-content__footer-count {
+    font-size: 12px;
+    line-height: 120%;
+    margin-bottom: 8px;
+}
+.basket-content__footer-fullprice {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.basket-content__footer-button {
+    width: inherit;
+    flex-grow: 1;
+}

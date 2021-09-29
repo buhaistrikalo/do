@@ -1,0 +1,33 @@
+body {
+    color: $black;
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.container {
+    
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 125%;
+
+    margin-bottom: 40px;
+}
+
+.none {
+    display: none;
+}
+
+.flex-space {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

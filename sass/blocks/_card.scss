@@ -1,0 +1,39 @@
+.card {
+    max-width: 410px;
+}
+.card__img {
+    height: 410px;
+    width: 410px;
+
+    margin-bottom: 20px;
+}
+.card__title {
+    margin-bottom: 21px;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+}
+.card__availability {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 150%;
+}
+.card__price {
+    display:flex;
+    margin-bottom: 21px;
+
+    line-height: 100%;
+}
+.card__price-new {
+    margin-right: 20px;
+
+    font-weight: bold;
+    font-size: 18px;
+    color: $accent;
+}
+.card__price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+}

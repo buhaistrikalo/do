@@ -1,0 +1,61 @@
+.basket {
+    position: relative;
+    
+}
+
+.basket__icon {
+    position: relative;
+    width: 42px;
+    height: 42px;
+
+    &:hover {
+        cursor: pointer;
+        .basket__quantity{
+            transform: translateY(-70%);
+        }
+    }
+
+}
+
+.basket__quantity {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: -8px;
+    top: 4px;
+    transform: translateY(-50%);
+    padding: 2px;
+    min-height: 24px;
+    min-width: 24px;
+    
+    background-color: #EB5757;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.basket-content {
+    position: absolute;
+    right: -10px;
+    
+    width: 475px;
+    background-color: #fff;
+    border-radius: 6px;
+
+    padding: 30px 20px 30px 20px;
+    top: -4000px;
+    transition: top 0.5s ease-in;
+}
+.basket-content-active {
+    top: -60%;
+}
+
+.basket-content__list {
+    width: 435px;
+    margin-bottom: 60px;
+}

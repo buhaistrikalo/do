@@ -1,0 +1,17 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Items
+@import "./items/button";
+
+//Blocks 
+@import "./blocks/header";
+@import "./blocks/content";
+@import "./blocks/card";
+
+@import "./blocks/basket/basket";
+@import "./blocks/basket/footer";
+@import "./blocks/basket/header";
+@import "./blocks/basket/products";
